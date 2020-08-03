@@ -1,8 +1,8 @@
 const bcrypt = require('bcrypt');
 const jwt = require ('jsonwebtoken');
-const User = require('../models/User');
 const mailValidator = require('email-validator'); // Plugin pour validation email regex
 const passwordValidator = require('password-validator'); //Plugin pour validation de mdp
+const User = require('../models/user');
 var schema = new passwordValidator();
 
 schema
