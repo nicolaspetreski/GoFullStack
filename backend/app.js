@@ -9,7 +9,7 @@ const helmet = require('helmet');
 
 
 
-mongoose.connect('mongodb+srv://new-user:<qweasdzxc123>@cluster0.6dlmb.mongodb.net/<dbname>?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://new-user:<qweasdzxc123>@cluster0-pme76.mongodb.net/test?retryWrites=true&w=majority',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
