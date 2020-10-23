@@ -6,9 +6,9 @@ const helmet = require('helmet');
 
 const sauceRoutes = require('./routes/sauces');
 const userRoutes = require('./routes/user');
+require('dotenv').config();
 
-
-mongoose.connect('mongodb+srv://new-user:qweasdzxc123@cluster0.6dlmb.mongodb.net/test?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://'+process.env.LOGIN+':'+process.env.PASSWORD+"@"+process.env.URL,
   { useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true })

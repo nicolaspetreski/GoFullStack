@@ -12,15 +12,16 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "email-validator": "^2.0.4",
     "express": "^4.17.1",
     "express-bouncer": "^0.2.0",
     "helmet": "^3.23.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.27",
+    "mongoose": "^5.10.9",
     "mongoose-unique-validator": "^2.0.3",
     "mongoose-validator": "^2.1.0",
     "multer": "^1.4.2",
-    "password-validator": "^5.0.3"
+    "password-validator": "^5.1.0"
   }
 }
