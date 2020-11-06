@@ -1,9 +1,9 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router(); //méthode router de express
 
-const auth = require('../middleware/auth'); 
-const multer = require('../middleware/multer-config');  
-const sauceCtrl = require('../controllers/sauces'); 
+const auth = require('../middleware/auth');  //importation de l'authentification
+const multer = require('../middleware/multer-config');   //importation multer pour gestions d'images
+const sauceCtrl = require('../controllers/sauces'); //importation des controllers sauces
 
 
 router.get('/', auth, sauceCtrl.getAllSauces);

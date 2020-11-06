@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');
-const sauceValidation = require('../middleware/sauceValid');
 
 const sauceSchema = mongoose.Schema({
   userId: { type: String, required: true },
-  name: { type: String, required: true, validate : sauceValidation.nameValidator },
-  manufacturer: { type: String, required: true, validate : sauceValidation.manufacturerValidator },
-  description: { type: String, required: true, validate : sauceValidation.descriptionValidator },
-  mainPepper: { type: String, required: true, validate : sauceValidation.pepperValidator },
+  name: { type: String, required: true },
+  manufacturer: { type: String, required: true },
+  description: { type: String, required: true },
+  mainPepper: { type: String, required: true },
   imageUrl: { type: String, required: true }, 
   heat: { type: Number, required: true, default : 0 },
   likes: { type: Number, required: false, default : 0 },
